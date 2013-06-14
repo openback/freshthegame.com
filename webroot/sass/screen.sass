@@ -1,0 +1,258 @@
+@import "reset"
+@import "compass/css3"
+@import "compass/typography"
+@import "mixins"
+
+$icons: sprite-map("icons/*.png")
+$gutters: 16px
+$page-width: 968px + 2 * $gutters
+$link-color: #fcb233
+$link-hover: white
+$link-active: white
+$link-visited: $link-color
+$link-focus: $link-active
+
+=medium-screen
+  @media screen and (max-width: 720px)
+    @content
+
+=small-screen
+  @media screen and (max-width: 480px)
+    @content
+
+html
+  font: 62.5%/1.5 TeXGyreAdventor, Hemlet, Freesans, sans-serif
+  +single-text-shadow(0, 1px, 1px, false, white)
+
+html,
+body
+  height: 100%
+
+body,
+select,
+input,
+textarea
+  color: #222
+
++selection
+  background: #ee145b
+  color: #fff
+  text-shadow: none
+
+// This is to fill out parsed HTML5 outlines
+.outline-only
+  display: none
+
+a
+  +link-colors($link-color, $link-hover, $link-active, $link-visited, $link-focus)
+  +transition-property()
+  +transition-duration(250ms)
+  text-decoration: none
+
+  &:link,
+  &:visited
+    -webkit-tap-highlight-color: #fcd700
+
++placeholder
+  color: #a9a9a9
+
+p
+  margin-bottom: 1em
+
+strong
+  font-weight: bold
+
+em
+  font-style: italic
+
+html
+  background-color: #fff
+
+body
+  font-size: 2.4em
+
+  +small-screen
+    font-size: 1.8em
+
+.container
+  width: $page-width
+  max-width: 100%
+  margin: 0 auto
+  overflow: hidden
+  padding: $gutters 0
+
+a
+  &.sifteo
+    +sprite-replace-text($icons, 'sifteo_off')
+
+    &:hover,
+    &:active
+      +sprite-replace-text($icons, 'sifteo_on')
+
+  &.sifteo-sync
+    +sprite-replace-text($icons, 'sync_off')
+
+    &:hover,
+    &:active
+      +sprite-replace-text($icons, 'sync_on')
+
+h1
+  font-size: 2em
+
+  .summary &,
+  .mode &
+    text-transform: uppercase
+
+img
+  height: auto
+
+.cube
+  position: relative
+  width: 100%
+  max-width: 438px
+
+  img
+    position: relative
+    width: 100%
+
+  .display
+    position: absolute
+    left: 0
+    top: 0
+
+.cubes
+  min-width: $page-width
+  overflow: hidden
+  text-align: center
+
+  +medium-screen
+    min-width: 0
+
+  .cube
+    display: inline-block
+
+    &:first-child
+      margin-right: 20px
+
+      +medium-screen
+        margin-right: 0
+
+
+  .cube-shot
+    background-color: #c1c1c1
+    height: auto
+    margin-bottom: 20px
+    max-width: 470px
+    width: 100%
+    padding: 16px
+    +border-radius(20px)
+
+#main-header
+  background-color: #1c1c1c
+  padding: 16px
+  position: fixed
+  text-align: right
+  top: 0
+  width: 100%
+  z-index: 10000
+
+  li
+    display: inline-block
+
+  .sifteo-sync
+    margin-left: 16px
+
+  .container
+    max-width: 100%
+
+  +small-screen
+    position: static
+    text-align: center
+
+    .sifteo
+      display: none
+
+    .sifteo-sync
+      margin: 0
+
+#page-header
+  position: relative
+  margin-top: 112px
+  text-align: center
+
+  img
+    display: block
+
+  > img
+    min-width: $page-width
+
+  .cube
+    position: absolute
+    top: 30px
+    left: 30px
+
+  +medium-screen
+    > img
+      display: none
+
+    .cube
+      display: inline-block
+      position: relative
+      top: auto
+      left: auto
+
+  +small-screen
+    margin-top: 0
+
+.summary
+  background-color: #e3e3e3
+  padding: 1em $gutters 0
+
+article
+  min-width: 100%
+  width: 100%
+
+  .container
+    .info
+      padding: $gutters
+
+section.mode,
+footer
+  background-color: #d7d7d7
+
+.mode
+  .info
+    clear: both
+
+footer
+  .container
+    font-size: 0.5em
+    background-color: black
+    color: #828282
+    +single-text-shadow(none)
+
+    +small-screen
+      font-size: 0.8em
+
+  .about-sifteo
+    padding: 30px
+
+  h1
+    color: white
+
+  .sifteo-logo
+    float: right
+    margin-bottom: 2em
+    margin-left: 2em
+    max-width: 100%
+
+    img
+      width: auto
+
+  .copyright
+    border-top: 1px solid #252525
+    margin-bottom: 0
+    padding-bottom: 30px
+    padding-top: 30px
+    text-align: center
+

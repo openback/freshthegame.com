@@ -1,0 +1,3 @@
+# Always force latest IE rendering engine (even in intranet) & Chrome Frame
+Header set X-UA-Compatible "IE=edge"
+

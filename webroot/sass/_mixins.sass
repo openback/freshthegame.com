@@ -1,0 +1,34 @@
+@import "compass/css3"
+
+=sprite-replace-text($sprite, $img-name)
+  +transition-duration(0)
+  @include hide-text
+  background: sprite($sprite, $img-name) no-repeat
+  display: inline-block
+  width: image-width(sprite-file($sprite, $img-name))
+  height: image-height(sprite-file($sprite, $img-name))
+
+=inline-box
+  display: inline-block
+  min-height: 1em
+  display: -moz-inline-stack
+  display: inline-block
+  vertical-align: top
+  zoom: 1
+  *display: inline
+  _height: 1em
+
+=placeholder
+  // These can't just be extended
+  @each $prefix in "::-webkit-input", ":moz", "::-moz", ":-ms-input"
+    #{$prefix}-placeholder
+      @content
+
+=selection
+  // These can't just be extended
+  ::-moz-selection
+    @content
+
+  ::selection
+    @content
+
