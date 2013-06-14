@@ -882,3 +882,172 @@ footer .copyright {
   padding-top: 30px;
   text-align: center;
 }
+
+@-webkit-keyframes slideDown {
+  /* line 262, ../sass/screen.sass */
+  0% {
+    top: -800px;
+  }
+
+  /* line 264, ../sass/screen.sass */
+  100% {
+    top: 30px;
+  }
+}
+
+@-moz-keyframes slideDown {
+  /* line 268, ../sass/screen.sass */
+  0% {
+    top: -800px;
+  }
+
+  /* line 270, ../sass/screen.sass */
+  100% {
+    top: 30px;
+  }
+}
+
+@keyframes slideDown {
+  /* line 274, ../sass/screen.sass */
+  0% {
+    top: -800px;
+  }
+
+  /* line 276, ../sass/screen.sass */
+  100% {
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  @-webkit-keyframes slideDown {
+    /* line 281, ../sass/screen.sass */
+    0% {
+      top: -800px;
+    }
+
+    /* line 283, ../sass/screen.sass */
+    100% {
+      top: 0px;
+    }
+}
+
+  @-moz-keyframes slideDown {
+    /* line 287, ../sass/screen.sass */
+    0% {
+      top: -800px;
+    }
+
+    /* line 289, ../sass/screen.sass */
+    100% {
+      top: 0px;
+    }
+}
+
+  @keyframes slideDown {
+    /* line 293, ../sass/screen.sass */
+    0% {
+      top: -800px;
+    }
+
+    /* line 295, ../sass/screen.sass */
+    100% {
+      top: 0px;
+    }
+}
+}
+@-webkit-keyframes wobble {
+  /* line 299, ../sass/screen.sass */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 301, ../sass/screen.sass */
+  20% {
+    -webkit-transform: rotate(-5deg);
+  }
+
+  /* line 303, ../sass/screen.sass */
+  40% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 305, ../sass/screen.sass */
+  60% {
+    -webkit-transform: rotate(5deg);
+  }
+
+  /* line 307, ../sass/screen.sass */
+  80% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes wobble {
+  /* line 311, ../sass/screen.sass */
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 313, ../sass/screen.sass */
+  20% {
+    -moz-transform: rotate(-5deg);
+  }
+
+  /* line 315, ../sass/screen.sass */
+  40% {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 317, ../sass/screen.sass */
+  60% {
+    -moz-transform: rotate(5deg);
+  }
+
+  /* line 319, ../sass/screen.sass */
+  80% {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@keyframes wobble {
+  /* line 323, ../sass/screen.sass */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 325, ../sass/screen.sass */
+  20% {
+    transform: rotate(-5deg);
+  }
+
+  /* line 327, ../sass/screen.sass */
+  40% {
+    transform: rotate(0deg);
+  }
+
+  /* line 329, ../sass/screen.sass */
+  60% {
+    transform: rotate(5deg);
+  }
+
+  /* line 331, ../sass/screen.sass */
+  80% {
+    transform: rotate(0deg);
+  }
+}
+
+/* line 336, ../sass/screen.sass */
+.cssanimations #page-header .cube {
+  top: -800px;
+}
+/* line 339, ../sass/screen.sass */
+.cssanimations #page-header .cube.loaded {
+  -webkit-animation: slideDown 0.65s linear 0s 1, wobble 0.25s linear 0.65s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: slideDown 0.65s linear 0s 1, wobble 0.25s linear 0.65s 1;
+  -moz-animation-fill-mode: forwards;
+  animation: slideDown 0.65s linear 0s 1, wobble 0.25s linear 0.65s 1;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}

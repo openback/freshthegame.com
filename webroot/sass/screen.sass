@@ -256,3 +256,92 @@ footer
     padding-top: 30px
     text-align: center
 
+
+// CSS Animations, if supported
+@-webkit-keyframes slideDown
+  0%
+    top: -800px
+  100%
+    top: 30px
+
+@-moz-keyframes slideDown
+  0%
+    top: -800px
+  100%
+    top: 30px
+
+@keyframes slideDown
+  0%
+    top: -800px
+  100%
+    top: 30px
+
++small-screen
+  @-webkit-keyframes slideDown
+    0%
+      top: -800px
+    100%
+      top: 0px
+
+  @-moz-keyframes slideDown
+    0%
+      top: -800px
+    100%
+      top: 0px
+
+  @keyframes slideDown
+    0%
+      top: -800px
+    100%
+      top: 0px
+
+@-webkit-keyframes wobble
+  0%
+    -webkit-transform: rotate(0deg)
+  20%
+    -webkit-transform: rotate(-5deg)
+  40%
+    -webkit-transform: rotate(0deg)
+  60%
+    -webkit-transform: rotate(5deg)
+  80%
+    -webkit-transform: rotate(0deg)
+
+@-moz-keyframes wobble
+  0%
+    -moz-transform: rotate(0deg)
+  20%
+    -moz-transform: rotate(-5deg)
+  40%
+    -moz-transform: rotate(0deg)
+  60%
+    -moz-transform: rotate(5deg)
+  80%
+    -moz-transform: rotate(0deg)
+
+@keyframes wobble
+  0%
+    transform: rotate(0deg)
+  20%
+    transform: rotate(-5deg)
+  40%
+    transform: rotate(0deg)
+  60%
+    transform: rotate(5deg)
+  80%
+    transform: rotate(0deg)
+
+.cssanimations
+  #page-header
+    .cube
+      top: -800px
+
+      &.loaded
+        -webkit-animation: slideDown 0.65s linear 0s 1, wobble 0.25s linear 0.65s 1
+        -webkit-animation-fill-mode: forwards
+        -moz-animation: slideDown 0.65s linear 0s 1, wobble 0.25s linear 0.65s 1
+        -moz-animation-fill-mode: forwards
+        animation: slideDown 0.65s linear 0s 1, wobble 0.25s linear 0.65s 1
+        -ms-animation-fill-mode: forwards
+        animation-fill-mode: forwards
+
