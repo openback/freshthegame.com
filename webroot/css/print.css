@@ -1037,12 +1037,12 @@ footer .copyright {
   }
 }
 
-/* line 336, ../sass/screen.sass */
-.cssanimations #page-header .cube {
+/* line 337, ../sass/screen.sass */
+.cssanimations.js #page-header .cube {
   top: -800px;
 }
-/* line 339, ../sass/screen.sass */
-.cssanimations #page-header .cube.loaded {
+/* line 340, ../sass/screen.sass */
+.cssanimations.js #page-header .cube.loaded {
   -webkit-animation: slideDown 0.65s linear 0s 1, wobble 0.25s linear 0.65s 1;
   -webkit-animation-fill-mode: forwards;
   -moz-animation: slideDown 0.65s linear 0s 1, wobble 0.25s linear 0.65s 1;
@@ -1050,4 +1050,61 @@ footer .copyright {
   animation: slideDown 0.65s linear 0s 1, wobble 0.25s linear 0.65s 1;
   -ms-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+/* line 3, ../sass/print.sass */
+body {
+  font-size: 1.5em;
+}
+
+/* line 6, ../sass/print.sass */
+.container {
+  padding: 0;
+  width: 100%;
+}
+
+/* line 10, ../sass/print.sass */
+.cubes {
+  min-width: 0;
+}
+/* line 13, ../sass/print.sass */
+.cubes .cube {
+  width: 45%;
+}
+
+/* line 16, ../sass/print.sass */
+#main-header {
+  display: none;
+}
+
+/* line 19, ../sass/print.sass */
+#page-header {
+  margin-top: 0;
+}
+/* line 22, ../sass/print.sass */
+#page-header > img {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+}
+/* line 27, ../sass/print.sass */
+#page-header .cube {
+  left: 5%;
+}
+
+/* line 30, ../sass/print.sass */
+.summary {
+  padding: 1em 0 0;
+}
+
+/* line 35, ../sass/print.sass */
+article .container .info {
+  padding: 0;
+}
+
+/* line 41, ../sass/print.sass */
+.cssanimations.js #page-header .cube {
+  left: 5%;
+  top: 5%;
+  width: 40%;
 }

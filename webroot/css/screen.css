@@ -1037,12 +1037,12 @@ footer .copyright {
   }
 }
 
-/* line 336, ../sass/screen.sass */
-.cssanimations #page-header .cube {
+/* line 337, ../sass/screen.sass */
+.cssanimations.js #page-header .cube {
   top: -800px;
 }
-/* line 339, ../sass/screen.sass */
-.cssanimations #page-header .cube.loaded {
+/* line 340, ../sass/screen.sass */
+.cssanimations.js #page-header .cube.loaded {
   -webkit-animation: slideDown 0.65s linear 0s 1, wobble 0.25s linear 0.65s 1;
   -webkit-animation-fill-mode: forwards;
   -moz-animation: slideDown 0.65s linear 0s 1, wobble 0.25s linear 0.65s 1;
