@@ -1,7 +1,7 @@
 @import "compass/css3"
 
 =sprite-replace-text($sprite, $img-name)
-  +transition-duration(0)
+  +transition-property(none)
   @include hide-text
   background: sprite($sprite, $img-name) no-repeat
   display: inline-block

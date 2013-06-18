@@ -609,10 +609,10 @@ body {
 
 /* line 85, ../sass/screen.sass */
 a.sifteo {
-  -webkit-transition-duration: 0;
-  -moz-transition-duration: 0;
-  -o-transition-duration: 0;
-  transition-duration: 0;
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -623,10 +623,10 @@ a.sifteo {
 }
 /* line 88, ../sass/screen.sass */
 a.sifteo:hover, a.sifteo:active {
-  -webkit-transition-duration: 0;
-  -moz-transition-duration: 0;
-  -o-transition-duration: 0;
-  transition-duration: 0;
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -637,10 +637,10 @@ a.sifteo:hover, a.sifteo:active {
 }
 /* line 92, ../sass/screen.sass */
 a.sifteo-sync {
-  -webkit-transition-duration: 0;
-  -moz-transition-duration: 0;
-  -o-transition-duration: 0;
-  transition-duration: 0;
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -651,10 +651,10 @@ a.sifteo-sync {
 }
 /* line 95, ../sass/screen.sass */
 a.sifteo-sync:hover, a.sifteo-sync:active {
-  -webkit-transition-duration: 0;
-  -moz-transition-duration: 0;
-  -o-transition-duration: 0;
-  transition-duration: 0;
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
